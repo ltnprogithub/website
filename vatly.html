@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Công Thức Vật Lý</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- MathJax for better formula rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f9;
+            padding-top: 60px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0d6efd;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #0d6efd;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+            width: 30%;
+        }
+        td {
+            background-color: #ffffff;
+            padding: 12px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        tr:nth-child(even) td {
+            background-color: #f8f9fa;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .math {
+            font-size: 1.1em;
+        }
+        /* CSS cho công thức dài */
+        .long-formula {
+            display: inline;
+            white-space: nowrap;
+        }
+        /* Responsive Table */
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                margin-bottom: 20px;
+            }
+            td {
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Công Thức Môn Học</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="toan.html">Toán Học</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="vatly.html">Vật Lý</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Tóm Tắt Công Thức Chương I, II (Vật Lý)</h1>
+        <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                  <tr>
+                    <th>1) Tốc độ trung bình</th>
+                    <td data-label="1) Tốc độ trung bình">
+                        <span class="math">\( v = \frac{s}{t} \) ⇔ \( s = v \cdot t \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>2) Vận tốc trung bình</th>
+                    <td data-label="2) Vận tốc trung bình">
+                        <span class="math">\( \vec{v} = \frac{\vec{d}}{t} \) ⇔ \( \vec{d} = \vec{v} \cdot t \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>3) Công thức cộng vận tốc</th>
+                    <td data-label="3) Công thức cộng vận tốc">
+                      <ul>
+                        <li class="math">Khi \( \vec{v}_{12} \parallel \vec{v}_{23} \) thì \( \vec{v}_{13} = \vec{v}_{12} + \vec{v}_{23} \)</li>
+                        <li class="math">Khi \( \vec{v}_{12} \parallel \vec{v}_{23} \) thì \( \vec{v}_{13} = |\vec{v}_{12} - \vec{v}_{23}| \)</li>
+                        <li class="math">Khi \( \vec{v}_{12} \perp \vec{v}_{23} \) thì \( v_{13} = \sqrt{v_{12}^2 + v_{23}^2} \)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>4) Độ dịch chuyển</th>
+                    <td data-label="4) Độ dịch chuyển">
+                        <span class="math">\( \vec{d} = \vec{d}_{\text{sáu}} - \vec{d}_{\text{trước}} \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>5) Quãng đường đi được</th>
+                    <td data-label="5) Quãng đường đi được">
+                        <span class="math">\( s = s_1 + s_2 + \ldots \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>6) Công thức chuyển động thẳng biến đổi đều</th>
+                    <td data-label="6) Công thức chuyển động thẳng biến đổi đều">
+                      <ul>
+                        <li class="math">\( a = \frac{\Delta v}{\Delta t} = \frac{v - v_0}{t - t_0} \)</li>
+                        <li class="math">\( v = v_0 + a t \)</li>
+                        <li class="math">\( d = v_0 t + \frac{1}{2} a t^2 \)</li>
+                        <li class="math">\( v^2 - v_0^2 = 2 a s = 2 a d \)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>7) Công thức rơi tự do</th>
+                    <td data-label="7) Công thức rơi tự do">
+                      <ul>
+                        <li class="math">\( d = s = \frac{1}{2} g t^2 = \frac{v^2}{2g} \)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>8) Rơi tự do (tiếp)</th>
+                    <td data-label="8) Rơi tự do (tiếp)">
+                        <span class="math">\( v = g t \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>9) Chuyển động ném</th>
+                    <td data-label="9) Chuyển động ném">
+                      <ul>
+                        <li><strong>9.1) Ném ngang:</strong>
+                          <ul>
+                            <li class="math">Tầm xa: \( L = v_0 t = v_0 \sqrt{\frac{2h}{g}} \)</li>
+                          </ul>
+                        </li>
+                        <li><strong>9.2) Ném xiên:</strong>
+                          <ul>
+                            <li class="math">Tầm cao: \( H = \frac{v_0^2 \sin^2 \alpha}{2g} \)</li>
+                            <li class="math">Tầm xa: \( L = \frac{v_0^2 \sin 2\alpha}{g} \)</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>10) Giá trị trung bình của phép đo</th>
+                    <td data-label="10) Giá trị trung bình của phép đo">
+                        <span class="math">\( \overline{A} = \frac{A_1 + A_2 + \ldots + A_n}{n} \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>11) Sai số ngẫu nhiên tuyệt đối của từng lần đo</th>
+                    <td data-label="11) Sai số ngẫu nhiên tuyệt đối của từng lần đo">
+                      <ul>
+                        <li class="math">\( \Delta A_1 = |A - A_1| \)</li>
+                        <li class="math">\( \Delta A_2 = |A - A_2| \)</li>
+                        <li class="math">\( \Delta A_n = |A - A_n| \)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>12) Sai số ngẫu nhiên tuyệt đối trung bình</th>
+                    <td data-label="12) Sai số ngẫu nhiên tuyệt đối trung bình">
+                        <span class="math">\( \Delta \overline{A} = \frac{\Delta A_1 + \Delta A_2 + \ldots + \Delta A_n}{n} \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>13) Sai số tuyệt đối của phép đo</th>
+                    <td data-label="13) Sai số tuyệt đối của phép đo">
+                        <span class="math">\( \Delta A = \Delta \overline{A} + \Delta A_{\text{dc}} \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>14) Sai số tuyệt đối của phép đo (tiếp)</th>
+                    <td data-label="14) Sai số tuyệt đối của phép đo (tiếp)">
+                        <span class="math">\( \Delta A = \Delta \overline{A} + \Delta A_{\text{dc}} \quad (\Delta A_{\text{dc}} = \frac{\text{ĐCNN}}{2}) \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>15) Sai số tương đối</th>
+                    <td data-label="15) Sai số tương đối">
+                        <span class="math">\( \delta A = \frac{\Delta A}{\overline{A}} \times 100\% \)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>16) Sai số phép đo gián tiếp</th>
+                    <td data-label="16) Sai số phép đo gián tiếp">
+                      <ul>
+                        <li><strong>Cộng:</strong>
+                        <span class="math">\( A = B + C \Rightarrow \Delta A = \Delta B + \Delta C \)</span></li>
+                        <li><strong>Nhân:</strong>
+                        <span class="math">\( A = B \cdot C \Rightarrow \delta A = \delta B + \delta C \)</span></li>
+                        <li><strong>Ví dụ:</strong>  
+                            <span class="math">\( v = \frac{s}{t} \Rightarrow \delta v = \frac{\Delta s}{s} + \frac{\Delta t}{t} \)</span>
+                            <span class="math">\( \Delta v = \delta v \cdot \vec{v} \)</span>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Công Thức Môn Học. Bảo lưu mọi quyền.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS và các phụ thuộc -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
